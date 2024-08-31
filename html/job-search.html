@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search | YourHR</title>
+    <link rel="stylesheet" href="../css/dashboard.css"> <!-- Link to the updated CSS -->
+    <link rel="stylesheet" href="../css/jobsearch.css"> <!-- Link to specific styles for job search -->
+</head>
+<body>
+    <header>
+        <h1>YourHR Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="jobsearch.html">Job Search</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search">
+            <h2>Job Search</h2>
+            <form action="#" method="get" class="search-form">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title" placeholder="Enter job title">
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="">Select category</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                    <!-- Add more categories as needed -->
+                </select>
+
+                <button type="submit" class="cta-button">Search</button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Search Results</h2>
+            <ul>
+                <!-- Example job listing -->
+                <li>
+                    <h3>Software Engineer at Tech Corp</h3>
+                    <p>Location: New York, NY</p>
+                    <p>Category: Engineering</p>
+                    <a href="#" class="cta-button">View Details</a>
+                </li>
+                <!-- Add more job listings dynamically -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YourHR. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
